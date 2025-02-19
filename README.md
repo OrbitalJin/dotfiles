@@ -3,7 +3,7 @@ arch + hyprland setup
 
 ## setup
 
-## dependencies
+### 0. Dependencies
 
 Ensure that both stow & git are installed
 
