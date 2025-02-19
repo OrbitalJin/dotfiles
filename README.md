@@ -5,10 +5,10 @@ arch + hyprland setup
 
 ### 0. Dependencies
 
-Ensure that both stow & git are installed
+Ensure that both stow & git are installed as well as the necessary packages for the specific dotfiles.
 
 ```bash
-sudo pacman -S stow git
+sudo pacman -S stow git kitty zsh
 ```
 
 ### 1. Clone the repository
