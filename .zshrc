@@ -63,15 +63,21 @@ function in {
 # Helpful aliases
 alias c='clear' # clear terminal
 alias e='exa -l'
+alias gs='git status'
 alias ce='clear && exa -l'
 alias v='nvim'
 alias s='ncspot'
 alias cd='z'
 alias zshrc='nvim ~/.zshrc && source ~/.zshrc'
 alias open='thunar . &'
-alias lzg='lazygit'
+alias lg='lazygit'
 alias lzd='lazydocker'
 alias "??"='gh copilot suggest'
+alias ff='fastfetch'
+alias fmw='arduino-cli'
+alias q='exit'
+alias cbrm='selected=$(cliphist list | fzf --no-sort | cliphist decode); cliphist delete-query "$selected" && echo "Deleted: $selected"'
+alias cbquery='cliphist list | fzf --no-sort | cliphist decode | tee /dev/tty | wl-copy'
 
 alias un='$aurhelper -Rns' # uninstall package
 alias up='$aurhelper -Syu' # update system/package/aur
@@ -107,6 +113,7 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
+export EDITOR='/usr/bin/nvim'
 
 export PATH=$PATH:/home/horijin/.spicetify
 

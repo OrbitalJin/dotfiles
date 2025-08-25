@@ -10,7 +10,7 @@
   "modules": [
     {
       "type": "custom",
-      "format": "\u001b[36m  󰇺 : Porsche @ 944s"
+      "format": "\u001b[36m  󰇺 : RX-7 @ FC3S"
     },
     {
       "type": "custom",
@@ -26,17 +26,6 @@
       "type": "command",
       "text": "hostnamectl | egrep -i \"Hardware Model\" | awk '{print $3 \" \" $4 \" \" $5 \" \" $6 \" \" $7}'",
       "key": "  󰇺 Machine"
-    },
-    {
-      "type": "kernel",
-      "key": "   Kernel",
-      "format": "{2}",
-      "keyColor": "red"
-    },
-    {
-      "type": "packages",
-      "key": "  󰏗 Packages",
-      "keyColor": "green"
     },
     {
       "type": "display",
